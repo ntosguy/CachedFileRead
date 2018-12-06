@@ -28,7 +28,7 @@ namespace ConsoleApp1
 
                 CacheItemPolicy policy = new CacheItemPolicy()
                 {
-                    AbsoluteExpiration = new DateTimeOffset(DateTime.Now.AddSeconds(8))
+                    AbsoluteExpiration = new DateTimeOffset(DateTime.Now.AddSeconds(8)) // Cache expires in 8 seconds
                 };
 
                 content = File.ReadAllText(filePath);
